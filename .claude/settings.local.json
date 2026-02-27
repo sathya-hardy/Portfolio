@@ -4,7 +4,8 @@
       "Bash(npx vite:*)",
       "Bash(npm install:*)",
       "Bash(git init:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(echo exit: $?:*)"
     ]
   }
 }
