@@ -5,7 +5,9 @@
       "Bash(npm install:*)",
       "Bash(git init:*)",
       "Bash(git:*)",
-      "Bash(echo exit: $?:*)"
+      "Bash(echo exit: $?:*)",
+      "Bash(npm run:*)",
+      "Bash(gh api:*)"
     ]
   }
 }

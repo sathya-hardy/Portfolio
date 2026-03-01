@@ -1,5 +1,7 @@
 import { experience, education } from "../data/resume";
 import ScrollReveal from "./ScrollReveal";
+import GlowBorder from "./GlowBorder";
+import BGPattern from "./BGPattern";
 
 export default function Experience() {
   return (
@@ -22,8 +24,10 @@ export default function Experience() {
                 {/* Dot */}
                 <div className="absolute -left-10 top-1 w-4 h-4 rounded-full bg-accent border-4 border-dark-900" />
 
-                <div className="bg-dark-700/30 border border-dark-600/30 rounded-lg p-6 glow-hover">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                <GlowBorder>
+                <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6">
+                  <BGPattern variant="dots" mask="fade-edges" />
+                  <div className="relative z-1 flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                     <div>
                       <h3 className="font-mono text-lg font-semibold text-white">{job.role}</h3>
                       <p className="text-accent">{job.company}</p>
@@ -42,6 +46,7 @@ export default function Experience() {
                     ))}
                   </ul>
                 </div>
+                </GlowBorder>
               </div>
             </ScrollReveal>
           ))}
@@ -58,7 +63,9 @@ export default function Experience() {
         <div className="grid md:grid-cols-2 gap-6">
           {education.map((edu, i) => (
             <ScrollReveal key={i} delay={i * 150 + 200}>
-              <div className="bg-dark-700/30 border border-dark-600/30 rounded-lg p-6 glow-hover flex gap-4 items-start h-full">
+              <GlowBorder className="h-full">
+              <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6 flex gap-4 items-start h-full">
+                <BGPattern variant="dots" mask="fade-edges" />
                 <img
                   src={edu.logo}
                   alt={edu.school}
@@ -73,6 +80,7 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
+              </GlowBorder>
             </ScrollReveal>
           ))}
         </div>

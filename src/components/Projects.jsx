@@ -1,5 +1,7 @@
 import { projects } from "../data/resume";
 import ScrollReveal from "./ScrollReveal";
+import GlowBorder from "./GlowBorder";
+import BGPattern from "./BGPattern";
 
 export default function Projects() {
   return (
@@ -18,10 +20,12 @@ export default function Projects() {
                 key={i}
                 delay={i * 100}
               >
+                <GlowBorder className="h-full">
                 <div
-                  className={`gradient-border bg-dark-700/30 border border-dark-600/30 rounded-lg p-6 glow-hover
+                  className={`relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6
                     flex flex-col h-full transition-transform duration-200 hover:-translate-y-1`}
                 >
+                  <BGPattern variant="dots" mask="fade-edges" />
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
                     <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,6 +79,7 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
+                </GlowBorder>
               </ScrollReveal>
           ))}
         </div>

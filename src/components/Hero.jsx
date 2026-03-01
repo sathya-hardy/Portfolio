@@ -1,5 +1,7 @@
 import { personal } from "../data/resume";
 import ScrollReveal from "./ScrollReveal";
+import GlowBorder from "./GlowBorder";
+import BGPattern from "./BGPattern";
 
 const funFacts = [
   { cmd: "cat interests.txt", output: "Football fanatic - Kevin de Bruyne is the GOAT" },
@@ -80,8 +82,10 @@ export default function Hero() {
         {/* Fun facts + Spotify — below the fold */}
         <div className="mt-16 max-w-3xl mx-auto">
           <ScrollReveal>
-            <div className="bg-dark-700/50 border border-dark-600/50 rounded-lg overflow-hidden">
-              <div className="flex items-center gap-2 px-4 py-2 bg-dark-700/80 border-b border-dark-600/50">
+            <GlowBorder>
+            <div className="relative overflow-hidden bg-dark-700/50 border border-dark-600/50 rounded-lg">
+              <BGPattern variant="dots" mask="fade-edges" />
+              <div className="relative z-1 flex items-center gap-2 px-4 py-2 bg-dark-700/80 border-b border-dark-600/50">
                 <span className="w-3 h-3 rounded-full bg-red-500/80" />
                 <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
                 <span className="w-3 h-3 rounded-full bg-green-500/80" />
@@ -98,11 +102,14 @@ export default function Hero() {
                 ))}
               </div>
             </div>
+            </GlowBorder>
           </ScrollReveal>
 
           <ScrollReveal delay={150}>
             <div className="mt-8 flex justify-center">
-              <div className="bg-dark-700/50 border border-dark-600/50 rounded-lg p-4 max-w-md w-full glow-hover">
+              <GlowBorder className="max-w-md w-full">
+              <div className="relative overflow-hidden bg-dark-700/50 border border-dark-600/50 rounded-lg p-4">
+                <BGPattern variant="dots" mask="fade-edges" />
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-lg shrink-0 bg-gradient-to-br from-accent/30 via-purple-500/20 to-cyan-500/30 flex items-center justify-center">
                     <svg className="w-7 h-7 text-accent" viewBox="0 0 24 24" fill="currentColor">
@@ -128,6 +135,7 @@ export default function Hero() {
                   <div className="h-full bg-accent/60 rounded-full spotify-progress" />
                 </div>
               </div>
+              </GlowBorder>
             </div>
           </ScrollReveal>
         </div>
