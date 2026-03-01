@@ -2,6 +2,7 @@ import { personal } from "../data/resume";
 import ScrollReveal from "./ScrollReveal";
 import GlowBorder from "./GlowBorder";
 import BGPattern from "./BGPattern";
+import Typewriter from "./Typewriter";
 
 const funFacts = [
   { cmd: "cat interests.txt", output: "Football fanatic - Kevin de Bruyne is the GOAT" },
@@ -34,9 +35,14 @@ export default function Hero() {
         </h1>
 
         <div className="hero-stagger h-8 mb-8" style={{ animationDelay: "0.6s" }}>
-          <span className="typing-effect font-mono text-xl md:text-2xl text-accent">
-            Software Engineer
-          </span>
+          <Typewriter
+            text={["Software Engineer", "Full-Stack Developer", "AI Enthusiast"]}
+            speed={80}
+            deleteSpeed={40}
+            delay={2000}
+            loop={true}
+            className="font-mono text-xl md:text-2xl text-accent"
+          />
         </div>
 
         <p className="hero-stagger text-gray-400 max-w-xl mx-auto mb-8 leading-relaxed" style={{ animationDelay: "0.8s" }}>

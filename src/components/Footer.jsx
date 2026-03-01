@@ -7,10 +7,9 @@ export default function Footer() {
       <section id="contact" className="py-20 px-6 bg-dark-800/30">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollReveal>
-            <h2 className="font-mono text-3xl font-bold text-white mb-2">
+            <h2 className="font-mono text-4xl font-bold text-accent mb-8">
               <span className="text-accent">{"#"}</span> Get In Touch
             </h2>
-            <div className="w-20 h-0.5 bg-accent mx-auto mb-8" />
           </ScrollReveal>
 
           <ScrollReveal delay={100}>

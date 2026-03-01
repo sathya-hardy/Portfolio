@@ -15,10 +15,9 @@ export default function Skills() {
     <section id="skills" className="py-20 px-6 noise-grain">
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
-          <h2 className="font-mono text-3xl font-bold text-white mb-2">
+          <h2 className="font-mono text-4xl font-bold text-accent mb-12">
             <span className="text-accent">{"#"}</span> Skills
           </h2>
-          <div className="w-20 h-0.5 bg-accent mb-12" />
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

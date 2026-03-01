@@ -8,10 +8,9 @@ export default function Experience() {
     <section id="experience" className="py-20 px-6 bg-dark-800/30 radial-mesh">
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
-          <h2 className="font-mono text-3xl font-bold text-white mb-2">
+          <h2 className="font-mono text-4xl font-bold text-accent mb-12">
             <span className="text-accent">{"#"}</span> Experience
           </h2>
-          <div className="w-20 h-0.5 bg-accent mb-12" />
         </ScrollReveal>
 
         {/* Work Experience Timeline */}
@@ -54,15 +53,14 @@ export default function Experience() {
 
         {/* Education */}
         <ScrollReveal delay={100}>
-          <h3 className="font-mono text-2xl font-bold text-white mt-16 mb-2">
+          <h3 className="font-mono text-3xl font-bold text-accent mt-16 mb-8">
             <span className="text-accent">{"#"}</span> Education
           </h3>
-          <div className="w-20 h-0.5 bg-accent mb-8" />
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
           {education.map((edu, i) => (
-            <ScrollReveal key={i} delay={i * 150 + 200}>
+            <ScrollReveal key={i} delay={i * 150 + 200} className="h-full">
               <GlowBorder className="h-full">
               <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6 flex gap-4 items-start h-full">
                 <BGPattern variant="dots" mask="fade-edges" />
