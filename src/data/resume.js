@@ -59,14 +59,14 @@ export const education = [
     gpa: "GPA: 3.9/4.0",
     dates: "Aug 2023 – May 2025",
     location: "Bloomington, IN, USA",
-    logo: "/logos/iu.svg",
+    logo: import.meta.env.BASE_URL + "logos/iu.svg",
   },
   {
     school: "Indian Institute of Technology – Madras",
     degree: "Bachelor of Technology, Mechanical Engineering",
     dates: "Aug 2017 – Jun 2021",
     location: "Chennai, India",
-    logo: "/logos/iitm.png",
+    logo: import.meta.env.BASE_URL + "logos/iitm.png",
   },
 ];
 
