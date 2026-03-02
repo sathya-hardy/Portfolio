@@ -20,7 +20,7 @@ export default function Projects() {
               <div key={i} className="w-[320px] md:w-[480px] shrink-0">
                 <GlowBorder className="h-full">
                   <div
-                    className="relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6
+                    className="relative overflow-hidden bg-dark-700/30 border border-dark-600/50 rounded-lg p-6
                       flex flex-col h-[520px] transition-transform duration-200 hover:-translate-y-1"
                   >
                     <BGPattern variant="dots" mask="fade-edges" />

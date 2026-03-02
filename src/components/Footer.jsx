@@ -86,7 +86,7 @@ export default function Footer() {
       <footer className="border-t border-dark-700/50 bg-dark-900 py-6 px-6">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <span className="font-mono text-accent text-xs">
-            {"<"} N C Sathya {"/>"}
+            {"<"} Sathya {"/ >"}
           </span>
           <span>Built with React & Tailwind</span>
           <div className="flex items-center gap-4">

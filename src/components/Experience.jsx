@@ -24,7 +24,7 @@ export default function Experience() {
                 <div className="absolute -left-10 top-1 w-4 h-4 rounded-full bg-accent border-4 border-dark-900" />
 
                 <GlowBorder>
-                <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6">
+                <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/50 rounded-lg p-6 transition-transform duration-200 hover:-translate-y-1">
                   <BGPattern variant="dots" mask="fade-edges" />
                   <div className="relative z-1 flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                     <div>
@@ -62,7 +62,7 @@ export default function Experience() {
           {education.map((edu, i) => (
             <ScrollReveal key={i} delay={i * 150 + 200} className="h-full">
               <GlowBorder className="h-full">
-              <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/30 rounded-lg p-6 flex gap-4 items-start h-full">
+              <div className="relative overflow-hidden bg-dark-700/30 border border-dark-600/50 rounded-lg p-6 flex gap-4 items-start h-full transition-transform duration-200 hover:-translate-y-1">
                 <BGPattern variant="dots" mask="fade-edges" />
                 <img
                   src={edu.logo}

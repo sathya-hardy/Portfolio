@@ -31,7 +31,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-dark-700/50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#home" className="font-mono font-bold text-xl text-accent">
-          {"<"} N C Sathya {"/>"}
+          {"<"} Sathya {"/ >"}
         </a>
 
         {/* Desktop links */}
